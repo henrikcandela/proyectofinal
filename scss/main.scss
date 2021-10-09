@@ -1,0 +1,25 @@
+@import "navegador.scss";
+@import "footer.scss";
+@import "fuentes.scss";
+@import "paginas.scss";
+@import "contacto.scss";
+@import "productos.scss";
+
+
+/* colores */
+html {
+    color: #3F3F44;
+    background-color: white;
+
+    justify-content: center;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    list-style-position:inherit;
+    
+    text-decoration: none;
+}
+
+

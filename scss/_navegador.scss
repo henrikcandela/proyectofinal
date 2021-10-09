@@ -1,0 +1,33 @@
+/*-- nav bar extraida de bootstrap --*/
+nav { 
+    background-color: #F8F4EB;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+
+    margin: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    align-content: center;
+
+    justify-content:space-evenly;
+    justify-items: center;
+
+}
+
+/*-- carousel extraido de bootstrap --*/
+.carousel {
+    padding-top: 76px;
+}

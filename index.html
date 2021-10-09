@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> C&M aromas </title>
+
+    <!-- Meta etiquetas -->
+    <meta name="description" content="sitio web de venta de productos aromaticos para el hogar tales como velas, difusores y perfuminas"> 
+    <meta name="keywords" content="productos aromaticos, velas, difusores, perfuminas, liquidacion, novedades">
+
+    <!-- Google Fonts titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+
+    <!-- Hoja de estilos css-->
+    <link rel="stylesheet" href="CSS/maincss.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <!-- Menu de Navegacion -->
+        <nav class="navbar navbar-expand-small navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="contenido/imagenes/logo-cm.jpg" width="60px" height="60px" alt="logo-cm"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #F8F4EB;">
+                    <div class="offcanvas-header">
+                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" class="text-secondary">
+                          <li>
+                             <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="pages/contacto.html"> Contacto </a>
+                          </li>
+                          
+                          <li class="nav-item">
+                             <a class="nav-link" href="pages/mayoristas.html"> Mayoristas </a>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="pages/productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                             Productos </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="pages/productos.html"> Todos los productos </a></li>
+                                    <li><a class="dropdown-item" href="pages/velas.html"> Velas </a></li>
+                                    <li><a class="dropdown-item" href="pages/perfuminas.html"> Perfuminas </a></li>
+                                    <li>
+                                    <li><a class="dropdown-item" href="pages/difusores.html"> Difusores </a></li>
+                                    <li><a class="dropdown-item" href="pages/liquidacion.html"> Liquidacion </a></li>
+                                    <li><a class="dropdown-item" href="pages/novedades.html"> Novedades </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                 <img class="d-block w-100" src="contenido/imagenes/carousel01.png" alt="envios a todo el pais" style="background-color: white;">
+              </div>
+              <div class="carousel-item">
+                 <img class="d-block w-100" src="contenido/imagenes/carousel02.png" alt="ventas por mayor y menor" style="background-color: white;">
+              </div>
+              <div class="carousel-item">
+                 <img class="d-block w-100" src="contenido/imagenes/carousel03.png" alt="descuento con transferencia" style="background-color: white;">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <!-- Nuestro lema -->
+        <h1 class="lema"> Converti tu casa en ese lugar donde queres estar. </h1>
+
+
+        <!-- Seccion productos -->
+        <div>
+            <a href="pages/productos.html"><img src="contenido/imagenes/todos.png" width="220px" height="280px" alt="portada de todos los productos"></a>
+            <p class="text-main"><a href="pages/productos.html"> Todos los productos </a></p>
+        </div>
+    
+        <!-- Seccion liquidacion -->
+        <div> 
+            <a href="pages/liquidacion.html"><img src="contenido/imagenes/liquidacion.png" width="220px" height="280px" alt="portada de liquidacion"></a>
+            <p class="text-main"><a href="pages/liquidacion.html"> Liquidacion </a></p>
+        </div>
+    
+        <!-- Seccion nuevos ingresos -->
+        <div> 
+            <a href="pages/novedades.html"><img src="contenido/imagenes/novedades.png" width="220px" height="280px" alt="portada de novedades"></a>
+            <p class="text-main"><a href="pages/novedades.html"> Novedades </a></p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <!--- Redes sociales -->
+        <section class="seccion-redes">
+            <p> Seguinos </p>
+            <ul> 
+                <li>
+                    <a href="https://www.instagram.com/cm.candles/" target="_blank"> <img src="contenido/imagenes/logo-instagram.png" height="25px" width="25px" alt="logo instagram"> </a>
+                </li>
+                <li> 
+                    <a href="https://www.facebook.com/cm.candle" target="_blank"> <img src="contenido/imagenes/logo-fb.png" height="25px" width="25px" alt="logo facebook"> </a>
+                </li> 
+                <li>
+                    <a href="https://www.tiktok.com/@cm.candles?lang=es" target="_blank" ><img src="contenido/imagenes/logo-tiktok.png" height="25px" width="25px" alt="logo tiktok"></a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Datos de contacto -->
+        <section class="seccion-contacto">
+            <p> Contacto </p>
+            <ul> 
+                <li> tel 1122334455 </li>
+                <li> candmcandles@gmail.com </li>
+                <li> villa crespo caba </li>
+            </ul>
+        </section>
+
+        <p class="copyright"> &copy C&M aromas 2021 </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="css/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Script Jquery para que funcione el carousel-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+Desafio meta etiquetas en todas las paginas encontras: 
+- meta description: describí el contenido del sitio, como es una pagina cuasi tienda online en todas las paginas se va a encontrar la descripcion siguiente ""sitio web de venta de productos aromaticos para el hogar tales como velas, difusores y perfuminas"
+- meta key words: palabras clave que van a encontrar en todo mi sitio 
+"productos aromaticos, velas, difusores, perfuminas, liquidacion, novedades"
+- encabezado: modifique el <title> y puse CM aromas 
+
+En el resto de las paginas coloque como H1 el contenido referente a la misma y agregue dependiendo de la pagina otras keywords: 
+- velas.html: H1 velas
+- productos.html: H1 todos los productos
+- perfuminas.html: H1 perfuminas
+- novedades.html: H1 novedades
+- mayoristas.html: H1 información mayorista
+- liquidacion.html: H1 liquidacion, agregue como keywords "precio promocional, promocion"
+- difusores.html: H1 difusores
+- contacto.html: H1 contactanos, agregue como keywords "informacion de contacto, contacto, contactanos"

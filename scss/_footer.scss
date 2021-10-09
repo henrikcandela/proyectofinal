@@ -1,0 +1,59 @@
+footer {
+    background-color: #F8F4EB;
+
+    list-style-position: inside;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:  
+    "seccion-redes seccion-contacto"
+    "copyright copyright";
+
+    justify-content: center;
+    justify-items: center;
+
+    align-content: center;
+    align-items: flex-start;
+
+    text-align: center;
+    
+    padding: 5px 1px 10px 5px;
+    
+    p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 18px;
+        font-weight: strong;
+    }
+
+}
+
+.seccion-redes ul li {
+    list-style-type: none;
+    list-style-position: inside;
+
+    grid-area: "seccion-redes";
+
+    padding-right: 25px;
+}
+
+.seccion-contacto ul li {
+    list-style-type: none;
+    list-style-position: inside;
+
+    grid-area: "seccion-contacto";
+
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+
+    letter-spacing: 0.2px;
+
+    padding-right: 25px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
