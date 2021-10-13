@@ -1,59 +1,73 @@
-footer {
+#grilla-footer {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    grid-template-areas:
+    "seccion-redes seccion-contacto";
+
     background-color: #F8F4EB;
 
-    list-style-position: inside;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:  
-    "seccion-redes seccion-contacto"
-    "copyright copyright";
-
+    align-items: center;
     justify-content: center;
-    justify-items: center;
 
-    align-content: center;
-    align-items: flex-start;
-
-    text-align: center;
-    
-    padding: 5px 1px 10px 5px;
-    
     p {
         font-family: 'Cormorant Garamond', serif;
-        font-size: 18px;
-        font-weight: strong;
+        font-size: 15px;
     }
-
 }
 
-.seccion-redes ul li {
-    list-style-type: none;
-    list-style-position: inside;
-
+.seccion-redes {
     grid-area: "seccion-redes";
 
-    padding-right: 25px;
+    padding-top: 20px;
+    padding-left: 30px;
+
+    ul li {
+        padding-right: 30px;
+    }
 }
 
-.seccion-contacto ul li {
-    list-style-type: none;
-    list-style-position: inside;
-
+.seccion-contacto {
     grid-area: "seccion-contacto";
 
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+    padding-bottom: 15px;
 
-    letter-spacing: 0.2px;
+    ul li {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
 
-    padding-right: 25px;
+        padding-right: 30px;
+    }
 }
 
-.copyright {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+/* -- adaptando tamaño de texto a otros dispositivos */
+
+@media (min-width: 728px) {
+    #grilla-footer {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .seccion-contacto {
+        ul li {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #grilla-footer {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .seccion-contacto {
+        ul li {
+            font-size: 14px;
+        }
+    }
 }

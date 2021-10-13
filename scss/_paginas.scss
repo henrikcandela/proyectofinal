@@ -9,14 +9,20 @@
     text-align: center;
 }
 
-/* formato del lema en index.html */
-.lema {
-    background-color: #F8F4EB;
-
-    padding: 10px;
-
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+/* media query adaptacion a tablet */ 
+@media (min-width: 728px) {
+    .page-content {
+        padding-top: 90px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
-
+/* media query adaptacion desktop */
+@media (min-width: 1024px) {   
+    .page-content {
+        padding-top: 90px;
+        padding-left: 250px;
+        padding-right: 250px;
+    } 
+}

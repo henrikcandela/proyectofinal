@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrikcandela/proyectofinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henrikcandela/proyectofinal/issues"
+  },
+  "homepage": "https://github.com/henrikcandela/proyectofinal#readme",
   "description": ""
 }

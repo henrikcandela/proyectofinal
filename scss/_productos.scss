@@ -1,0 +1,88 @@
+/* -- Adaptacion de las secciones de index-html y productos.html para hacerlo responsive */ 
+
+/*secciones del index.html*/
+@media (min-width: 728px) {
+    #grilla-productos {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+        "productos liquidacion novedades";
+    }
+
+    .productos {
+        grid-area: "productos";
+    }
+
+    .liquidacion {
+        grid-area: "liquidacion";
+    }
+
+    .novedades {
+        grid-area: "novedades";
+    }
+}
+
+@media (min-width: 1024px) {
+    #grilla-productos {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+        "productos liquidacion novedades";
+    }
+
+    .productos {
+        grid-area: "productos";
+    }
+
+    .liquidacion {
+        grid-area: "liquidacion";
+    }
+
+    .novedades {
+        grid-area: "novedades";
+    }
+}
+
+/* secciones de productos.html */
+
+@media (min-width: 1024px) {
+    #grilla-index {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        grid-template-areas: 
+        "velas perfuminas difusores" 
+        "liquidacion .. novedades";
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .velas {
+        grid-area: "velas";
+    }
+
+    .perfuminas {
+        grid-area: "perfuminas";
+    }
+
+    .difusores {
+        grid-area: "difusores";
+    }
+
+    .liquidacion {
+        grid-area: "liquidacion";
+    }
+
+    .novedades {
+        grid-area: "novedades";
+    }
+}

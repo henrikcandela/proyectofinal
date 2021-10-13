@@ -1,66 +1,4 @@
-/*-- nav bar extraida de bootstrap --*/
-nav {
-  background-color: #F8F4EB;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-align: center; }
-
-nav ul {
-  list-style-type: none;
-  list-style-position: inside;
-  margin: 1px 1px 1px 1px;
-  padding: 1px 1px 1px 1px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: space-evenly;
-  justify-items: center; }
-
-/*-- carousel extraido de bootstrap --*/
-.carousel {
-  padding-top: 76px; }
-
-footer {
-  background-color: #F8F4EB;
-  list-style-position: inside;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "seccion-redes seccion-contacto" "copyright copyright";
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: flex-start;
-  text-align: center;
-  padding: 5px 1px 10px 5px; }
-  footer p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: strong; }
-
-.seccion-redes ul li {
-  list-style-type: none;
-  list-style-position: inside;
-  grid-area: "seccion-redes";
-  padding-right: 25px; }
-
-.seccion-contacto ul li {
-  list-style-type: none;
-  list-style-position: inside;
-  grid-area: "seccion-contacto";
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.2px;
-  padding-right: 25px; }
-
-.copyright {
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal; }
-
+@charset "UTF-8";
 /* fuentes */
 .text-main {
   font-family: 'Cormorant Garamond', serif;
@@ -91,6 +29,82 @@ a:active {
   color: #3F3F44;
   text-decoration: none; }
 
+/* colores */
+html {
+  color: #3F3F44;
+  background-color: white;
+  justify-content: center;
+  text-align: center; }
+
+ul li {
+  list-style: none;
+  list-style-position: inherit;
+  text-decoration: none; }
+
+/*-- nav bar extraida de bootstrap --*/
+nav {
+  background-color: #F8F4EB;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center; }
+
+nav ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 1px 1px 1px 1px;
+  padding: 1px 1px 1px 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  justify-items: center; }
+
+/*-- carousel extraido de bootstrap --*/
+.carousel {
+  padding-top: 76px; }
+
+#grilla-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "seccion-redes seccion-contacto";
+  background-color: #F8F4EB;
+  align-items: center;
+  justify-content: center; }
+  #grilla-footer p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px; }
+
+.seccion-redes {
+  grid-area: "seccion-redes";
+  padding-top: 20px;
+  padding-left: 30px; }
+  .seccion-redes ul li {
+    padding-right: 30px; }
+
+.seccion-contacto {
+  grid-area: "seccion-contacto";
+  padding-bottom: 15px; }
+  .seccion-contacto ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding-right: 30px; }
+
+/* -- adaptando tamaño de texto a otros dispositivos */
+@media (min-width: 728px) {
+  #grilla-footer p {
+    font-size: 18px; }
+  .seccion-contacto ul li {
+    font-size: 12px; } }
+
+@media (min-width: 1024px) {
+  #grilla-footer p {
+    font-size: 20px; }
+  .seccion-contacto ul li {
+    font-size: 14px; } }
+
 /* contenido de las paginas */
 .page-content {
   padding-top: 90px;
@@ -99,14 +113,21 @@ a:active {
   margin: 8px 8px 8px 8px;
   text-align: center; }
 
-/* formato del lema en index.html */
-.lema {
-  background-color: #F8F4EB;
-  padding: 10px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px; }
+/* media query adaptacion a tablet */
+@media (min-width: 728px) {
+  .page-content {
+    padding-top: 90px;
+    padding-left: 100px;
+    padding-right: 100px; } }
 
-/* formulario de contacto */
+/* media query adaptacion desktop */
+@media (min-width: 1024px) {
+  .page-content {
+    padding-top: 90px;
+    padding-left: 250px;
+    padding-right: 250px; } }
+
+/* formato casilleros de las paginas contacto.html y mayoristas.html */
 .mb-1 {
   font-family: 'Montserrat', sans-serif;
   font-size: x-small;
@@ -127,15 +148,113 @@ a:active {
   margin-right: 10px;
   margin-bottom: 10px; }
 
-/* MEDIA QUERIES PARA ADAPTAR CASILLEROS */
-/* colores */
-html {
-  color: #3F3F44;
-  background-color: white;
-  justify-content: center;
-  text-align: center; }
+.mb-4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-small; }
 
-ul li {
-  list-style: none;
-  list-style-position: inherit;
-  text-decoration: none; }
+/* media querie para adaptar casilleros */
+/* tablet */
+@media (min-width: 728px) {
+  .mb-1 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-2 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-3 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-4 {
+    padding-left: 100px;
+    padding-right: 100px; } }
+
+/* desktop */
+@media (min-width: 1024px) {
+  .mb-1 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-2 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-3 {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .mb-4 {
+    padding-left: 100px;
+    padding-right: 100px; } }
+
+/*-- formato del lema en index.html --*/
+.lema {
+  background-color: #F8F4EB;
+  padding: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px; }
+
+/* media query adaptacion a tablet */
+@media (min-width: 728px) {
+  .lema {
+    font-size: 25px; } }
+
+/* media query adaptacion a desktop */
+@media (min-width: 1024px) {
+  .lema {
+    font-size: 35px; } }
+
+/*-- tamaño logo --*/
+@media (min-width: 728px) {
+  nav div a img {
+    height: 80px;
+    width: 80px; } }
+
+@media (min-width: 1024px) {
+  nav div a img {
+    height: 100px;
+    width: 100px; } }
+
+/* -- Adaptacion de las secciones de index-html y productos.html para hacerlo responsive */
+/*secciones del index.html*/
+@media (min-width: 728px) {
+  #grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "productos liquidacion novedades"; }
+  .productos {
+    grid-area: "productos"; }
+  .liquidacion {
+    grid-area: "liquidacion"; }
+  .novedades {
+    grid-area: "novedades"; } }
+
+@media (min-width: 1024px) {
+  #grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "productos liquidacion novedades"; }
+  .productos {
+    grid-area: "productos"; }
+  .liquidacion {
+    grid-area: "liquidacion"; }
+  .novedades {
+    grid-area: "novedades"; } }
+
+/* secciones de productos.html */
+@media (min-width: 1024px) {
+  #grilla-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "velas perfuminas difusores"  "liquidacion .. novedades";
+    align-items: center;
+    justify-content: center; }
+  .velas {
+    grid-area: "velas"; }
+  .perfuminas {
+    grid-area: "perfuminas"; }
+  .difusores {
+    grid-area: "difusores"; }
+  .liquidacion {
+    grid-area: "liquidacion"; }
+  .novedades {
+    grid-area: "novedades"; } }

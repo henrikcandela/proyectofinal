@@ -1,0 +1,38 @@
+/*-- formato del lema en index.html --*/
+.lema {
+    background-color: #F8F4EB;
+
+    padding: 10px;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+}
+
+/* media query adaptacion a tablet */ 
+@media (min-width: 728px) {
+    .lema {
+        font-size: 25px; 
+    }
+}
+
+/* media query adaptacion a desktop */
+@media (min-width: 1024px) {
+    .lema { 
+        font-size: 35px;
+    }
+}
+
+/*-- tamaño logo --*/
+@media (min-width: 728px) {
+    nav div a img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav div a img {
+        height: 100px;
+        width: 100px;
+    }
+}
