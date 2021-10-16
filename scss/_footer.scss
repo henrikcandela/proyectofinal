@@ -21,18 +21,22 @@
 .seccion-redes {
     grid-area: "seccion-redes";
 
-    padding-top: 20px;
-    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 
-    ul li {
+    ul {
         padding-right: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
 .seccion-contacto {
     grid-area: "seccion-contacto";
 
-    padding-bottom: 15px;
+    padding-top: 15px;
 
     ul li {
         font-family: 'Montserrat', sans-serif;
